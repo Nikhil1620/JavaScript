@@ -1,0 +1,30 @@
+
+function Minimum(Brr)
+{
+    let iCnt = 0;
+    let iMin = Brr[0];
+
+    for(iCnt = 0; iCnt < Brr.length; iCnt++)
+    {
+        if(iMin > Brr[iCnt])
+        {
+            iMin = Brr[iCnt];
+        }
+    }  
+
+    return iMin;
+}
+
+function main()
+{
+    const Arr = [10, 20, 30, 40, 50];   
+    let iRet = 0; 
+
+    console.log(typeof(Arr));
+
+    iRet = Minimum(Arr);
+
+    console.log("The minimum number is ",iRet);
+}
+
+main();
